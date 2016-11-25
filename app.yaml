@@ -8,7 +8,7 @@ handlers:
 - url: /index\.html
   script: index.php
 
-- url: /stylesheets
+- url: /css
   static_dir: css
 
 - url: /(.*\.(gif|png|jpg))$
