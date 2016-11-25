@@ -1,7 +1,11 @@
 <?php
 // PDO connect *********
 function connect() {
-    return new PDO('mysql:host=golden-era-150418:us-central1:demo-db;dbname=autocomplete', 'root', 'HFSKSKE&&^%21322fdhshe', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+	$dsn = getenv('MYSQL_DSN');
+    $user = getenv('MYSQL_USER');
+    $password = getenv('MYSQL_PASSWORD');
+    //return new PDO('mysql:host=golden-era-150418:us-central1:demo-db;dbname=autocomplete', 'root', 'HFSKSKE&&^%21322fdhshe', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    return new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 }
 
 $pdo = connect();
