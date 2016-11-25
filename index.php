@@ -18,14 +18,14 @@
             <form>
                 <div class="label_div">Type a keyword : </div>
                 <div class="input_container">
-                    <input type="text" id="country_id" onkeyup="autocomplet()">
-                    <ul id="country_list_id"></ul>
+                    <!-- <input type="text" id="country_id" onkeyup="autocomplet()"> -->
+                    <input type="text" id="sku" onkeyup="autocomplet()">
+                    <!-- <ul id="country_list_id"></ul> -->
+                    <ul id="product_list"></ul>
                 </div>
             </form>
         </div><!-- content -->    
-        <div class="footer">
-            Powered by <a href="#">bewebdeveloper.com</a>
-        </div><!-- footer -->
+       
     </div><!-- container -->
 </body>
 </html>
