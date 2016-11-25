@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/css; charset=utf-8" />
-<title>Autocomplete using PHP/MySQL and jQuery</title>
+<title>Autocomplete Interview Prototype</title>
 <link rel="stylesheet" href="css/style.css" />
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
@@ -11,9 +11,9 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="images/BeWebDeveloper.png" />
+            <img src="images/Live_Strong.jpg" />
         </div><!-- header -->
-        <h1 class="main_title">Autocomplete using PHP/MySQL and jQuery</h1>
+        <h1 class="main_title">Autocomplete Interview Prototype</h1>
         <div class="content">
             <form>
                 <div class="label_div">Type a keyword : </div>
