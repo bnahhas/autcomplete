@@ -11,7 +11,7 @@ handlers:
 - url: /css
   static_dir: css
 
-- url: /(.*\.(gif|png|jpg))$
+- url: /images/(.*\.(gif|png|jpg))$
   static_files: images/\1
   upload: images/.*\.(gif|png|jpg)$
 
