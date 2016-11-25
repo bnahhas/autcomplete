@@ -2,18 +2,31 @@ runtime: php55
 api_version: 1
 
 handlers:
+
+
+  
 - url: /
   script: index.php
-
-- url: /index\.html
-  script: index.php
-
+  
+- url: /js
+  static_dir: js
+  
 - url: /css
   static_dir: css
 
 - url: /images/(.*\.(gif|png|jpg))$
   static_files: images/\1
   upload: images/.*\.(gif|png|jpg)$
+  application_readable: true
 
-- url: /.*
-  script: not_found.php
+- url: /(.+\.php)
+  script: \1 
+
+# [START env]
+env_variables:
+  # Replace project, instance, database, user and password with the values obtained
+  # when configuring your Cloud SQL instance.
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/golden-era-150418:us-central1:demo-db;dbname=autocomplete
+  MYSQL_USER: root
+  MYSQL_PASSWORD: 'HFSKSKE&&^%21322fdhshe'
+# [END env]
